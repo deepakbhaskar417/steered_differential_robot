@@ -1,0 +1,12 @@
+<launch>
+
+<rosparam file="$(find garbage_robot_description)/launch/controller.yaml" command="load"/>
+<node args=" right_knuckle_position_controller left_knuckle_position_controller  Slider_position_controller arm_joint_position_controller   gripper1_joint_position_controller gripper2_joint_position_controller joint_state_controller " name="controller_spawner" ns="/" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+<node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+  <remap from="/joint_states" to="/joint_states"/>
+</node>
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" respawn="true"
+    output="screen" >
+</node>
+
+</launch>
