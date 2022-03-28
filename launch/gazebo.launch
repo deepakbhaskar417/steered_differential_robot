@@ -17,6 +17,6 @@
     <arg name="debug" value="false"/>
   </include>
  <include file="$(find garbage_robot_description)/launch/controller.launch"/>
- <node  name="steering_control_node" pkg="garbage_robot_description" type="stearing.py" />
- 
+ <!--<node  name="steering_control_node" pkg="garbage_robot_description" type="stearing.py" />-->
+ <node  name="steering_control_node" pkg="garbage_robot_description" type="ackerman.py" />
 </launch>

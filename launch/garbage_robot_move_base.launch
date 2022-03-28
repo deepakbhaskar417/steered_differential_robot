@@ -53,6 +53,9 @@
     <rosparam file="$(find garbage_robot_description)/param/global_costmap_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find garbage_robot_description)/param/base_local_planner_params.yaml" command="load" />
     
+    <!--<rosparam file="$(find garbage_robot_description)/param/move_base_params.yaml" command="load" />-->
+    <param name="controller_frequency" value="10.0" />
+
   <!-- not sure whether needed or not. added to avoid in-place rotation-->
     <param name="clearing_roatation_allowed" value="false"/>
     <param name="recovery_behavior_enabled " value="false"/>
