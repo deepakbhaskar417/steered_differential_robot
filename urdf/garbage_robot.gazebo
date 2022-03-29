@@ -26,7 +26,7 @@
     <rightJoint>back_left_joint</rightJoint>
 
     <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
-    <wheelSeparation>1.2</wheelSeparation>
+    <wheelSeparation>1.845</wheelSeparation>
 
     <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
     <wheelDiameter>0.330</wheelDiameter>
@@ -84,7 +84,7 @@
         </scan>
         <range>
           <min>0.10</min>
-          <max>100.0</max>
+          <max>12.0</max>
           <resolution>0.01</resolution>
         </range>
         <noise>

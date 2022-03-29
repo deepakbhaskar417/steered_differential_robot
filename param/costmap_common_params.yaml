@@ -1,8 +1,8 @@
 # Maximum range sensor reading in meters that results in an obstacle being placed in the costmap
-obstacle_range: 100.0
+obstacle_range: 3.0
 
 # Outside of this range is considered free space
-raytrace_range: 15.0
+raytrace_range: 3.5
 
 # Footprint of the robot with (0,0) being the center (in meters)
 footprint: [[-1.3, -0.6], [-1.3, 0.6], [1.3, 0.6], [1.3, -0.6]]
@@ -53,5 +53,5 @@ obstacle_layer:
 
 # Map layer that adds a cushion in meters around obstacles
 inflation_layer:
-  inflation_radius: 3 #1.5
-  cost_scaling_factor: 1
+  inflation_radius: 0.5 #1.5
+  cost_scaling_factor: 10
