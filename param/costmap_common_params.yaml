@@ -5,9 +5,9 @@ obstacle_range: 3.0
 raytrace_range: 3.5
 
 # Footprint of the robot with (0,0) being the center (in meters)
-footprint: [[-1.3, -0.7], [-1.3, 0.7], [1.3, 0.7], [1.3, -0.7]] # types: "point", "circular", "two_circles", "line", "polygon"
+footprint: [[-0.3, -0.7], [-0.3, 0.7], [2.2, 0.7], [2.2, -0.7]] # types: "point", "circular", "two_circles", "line", "polygon"
 
-footprint_paddding: 0.1
+footprint_paddding: 0.3
 # The static map created using SLAM is being published to this topic
 map_topic: /map
 
@@ -15,7 +15,7 @@ map_topic: /map
 global_frame: map
 
 # Base frame of the robot
-robot_base_frame: base_link
+robot_base_frame: base_footprint
 
 # Frequency in Hz for the costmap to be updated
 update_frequency: 5.0

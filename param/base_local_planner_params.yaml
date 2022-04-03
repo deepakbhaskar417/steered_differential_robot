@@ -15,7 +15,7 @@ TebLocalPlannerROS:
  # Robot
          
  max_vel_x: 0.5
- max_vel_x_backwards: 0.2
+ max_vel_x_backwards: 0.3
  max_vel_theta: 0.125
  acc_lim_x: 0.5
  acc_lim_theta: 0.5
@@ -24,12 +24,12 @@ TebLocalPlannerROS:
  footprint_model: # types: "point", "circular", "line", "two_circles", "polygon"
   #  type: "point"
    type: "polygon"
-   vertices: [ [-1.3, -0.7], [-1.3, 0.7], [1.3, 0.7], [1.3, -0.7] ]# for type "circular"
-   footprint_paddding: 0.1 
+   vertices: [ [-0.3, -0.7], [-0.3, 0.7], [2.2, 0.7], [2.2, -0.7] ]# for type "circular"
+   footprint_paddding: 0.3 
   
  # GoalTolerance
     
- xy_goal_tolerance: 0.25
+ xy_goal_tolerance: 0.3
  yaw_goal_tolerance: 0.25
  free_goal_vel: False
     
