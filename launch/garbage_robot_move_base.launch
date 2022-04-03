@@ -51,7 +51,7 @@
     <rosparam file="$(find garbage_robot_description)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find garbage_robot_description)/param/local_costmap_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find garbage_robot_description)/param/global_costmap_params.yaml" command="load" ns="global_costmap" />
-    <rosparam file="$(find garbage_robot_description)/param/teb_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find garbage_robot_description)/param/base_local_planner_params.yaml" command="load" />
       <!-- Here we load our costmap conversion settings -->
      <param name="TebLocalPlannerROS/include_costmap_obstacles" value="False" />
       <param name="TebLocalPlannerROS/include_dynamic_obstacles" value="True" />
@@ -61,8 +61,8 @@
       <param name="controller_patience" value="15.0" />
       <remap from="map" to="/map"/>
   <!-- not sure whether needed or not. added to avoid in-place rotation-->
-    <param name="clearing_roatation_allowed" value="false"/>
-    <param name="recovery_behavior_enabled " value="false"/>
+    <param name="clearing_roatation_allowed" value="false"/> <!-- Our carlike robot is not able to rotate in place -->
+    
   </node>
 
 </launch>
